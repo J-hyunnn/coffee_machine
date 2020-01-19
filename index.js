@@ -81,7 +81,6 @@ class CoffeeMachine {
         } else {
             this.amountOfMilk -= this.milkPerCup;
             this.calculatedCoffeePrice = 10 + 5;
-            //this.preparedMilk = this.milkPerCup;
         }
     }
 
@@ -96,8 +95,7 @@ class CoffeeMachine {
             console.log('coffee price is ' + this.calculatedCoffeePrice)
         } else {
             //console.log('coffee price is ' + this.calculatedCoffeePrice)
-            //return this.amountOfIce;
-            
+            //return this.amountOfIce;            
         }
     }
 
@@ -112,13 +110,9 @@ class CoffeeMachine {
 
     displayShowPrice() {
         this.displayShowedPrice = true;
-        //return this.calculatedCoffeePrice;
     }
 
     insertMoney(inserted) {
-
-
-        
         if (typeof inserted !== 'number' && inserted >= 0) {
             throw (new Error('You must insert money not ' + nonMoney));
         }
@@ -133,7 +127,6 @@ class CoffeeMachine {
     pressStartButton() {
         this.pressedStartButton = true;
         return "here's your coffee"
-
     }
 
     pressStartButtonWithout() {
@@ -150,19 +143,14 @@ class CoffeeMachine {
     }
 
     giveBackChange() {
-        //this.insertedMoney -= 
         if (this.insertedMoney > this.calculatedCoffeePrice){
             this.totalMoney -= this.insertedMoney;
             this.changeMoney = this.insertedMoney - this.calculatedCoffeePrice
 
         } else if (this.insertedMoney < this.calculatedCoffeePrice){
             this.totalMoney -= this.insertedMoney;
-            //return this.insertedMoney
-
         }
-        
     }
-
 
     decidePayCard(){
         this.decidedPayCard = true;
@@ -171,16 +159,7 @@ class CoffeeMachine {
     swipeCard(){
         this.swipedCard = true;
     }
-
-
-
-
-
-
-
 }
-
-
 
 
 // Export the CoffeeMachine class
