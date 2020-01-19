@@ -1,0 +1,217 @@
+Class: CoffeeMachine
+
+
+1. Properties
+
+pluggedIn
+    Type : Boolean
+    initial value : false
+    shows if the machine is plugged in for electricity
+
+amountOfCoffee
+    Type : Number (g)
+    initial value : 0
+    The total amount of coffee in the machine for order
+
+coffeePerCup
+    Type : Number (g)
+    initial value : 13
+    The required amount of coffee for a cup of coffee
+
+amountOfMilk
+    Type : Number (ml)
+    initial value : 0
+    The total amount of milk in the machine for order
+
+milkPerCup
+    Type : Number (ml)
+    initial value : 200
+    The required amount of milk for a cup of coffee
+
+amountOfIce
+    Type : Number (g)
+    initial value = 0
+    the total amount of ice in the machine for order
+
+icePerCup
+    Type : Number (g)
+    initial value : 100
+    The required amount of ice for a cup of ice beverage
+
+connectedToWater
+    Type : Boolean
+    initial value : false
+    shows if the machine is connected to water tap
+
+placedCup
+    Type = Boolean
+    initial value : false
+    Shows if the user places a cup on the rack to order a cup of coffee
+
+displayAskedWhichCoffee
+    Type : Boolean
+    initial value : false
+    The display asks which coffee the user want to have
+
+displayAskedIfIce
+    Type : Boolean
+    initial value : false
+    The display asks if the user want to have ice
+
+calculatedCoffeePrice
+    Type : Number
+    initial value : 0
+    Coffee price is calculated according to order
+    basic charge : 10kr
+    coffee : 5kr
+    milk : 5kr
+    ice : 5kr
+
+displayAskedPayment
+    Type : Boolean
+    initial value : false
+    The display has shown what type of payment it has
+
+decidedPayCash
+    Type : Boolean
+    initial value : false
+    The user want to pay with cash
+
+displayShowedPrice 
+    Type : Boolean
+    initial value : false
+   The display has shown the price for the coffee the user orders
+
+totalMoney
+    Type : Number
+    initial value : 0
+    Total amount of money in the machine
+
+insertedMoney
+    Type : Number
+    initial value : 0
+    The amount of money that the user has inserted
+
+displayAskedDoubleCheck
+    Type : Boolean
+    initial value : false
+    The machine has shown if the user want to start the order
+
+changeMoney
+    Type : Number
+    initial value : 0
+    The amount of change that the user will get back
+
+pressedStartButton
+    Type : Boolean
+    initial value : false
+    The user has pressed the start button so that the machine starts making coffee
+
+decidedPayCard
+    Type : Boolean
+    initial value : false
+    The user want to pay with card
+
+swipedCard
+    Type : Boolean
+    initial value : false
+    The user swipes the card to pay
+
+
+2. Methods
+
+    plugIn()
+    pluggs in the machine
+    return value : nothing
+
+    checkIfEnoughCoffeeForACup()
+    to check if there is enough coffee to order
+    return value : true or false
+
+    fillWithCoffee(amount)
+    called when the machine is refilled with coffee 
+    return value : nothing
+
+    checkIfEnoughMilkForACup()
+    to check if there is enough milk to order
+    return value : true or false
+
+    fillWithMilk(amount)
+    called when the machine is refilled with milk 
+    return value : nothing
+
+    checkIfEnoughIceForACup()
+     to check if there is enough ice to order
+    return value : true or false
+
+    fillWithIce(amount) 
+    called when the machine is refilled with ice 
+    return value : nothing
+
+    connectToWater() 
+    connect machine to water tap
+    return value : nothing
+
+    placeACup()
+    a cup is placed on the rack to for order  
+    return value : nothing
+
+    displayAskWhichCoffee()
+    the machine ask which menu the user want to get
+    return value : nothing
+
+    makeOrderForMenu1(menu1)
+    the user chooses what he/she wants to get
+    return value : nothing
+
+    displayAskIfIce()
+    the machine asks if the use wants to add ice 
+    return value : nothing
+
+    prepareIceForMenu2(menu2)
+     the user chooses the order with ice or non-ice 
+    return value : nothing
+
+    displayAskPayment()
+    the machine asks how the user wants to pay 
+    return value : nothing
+
+    decidePayCash()
+    the user wants to pay with cash
+    return value : nothing
+
+    displayShowPrice()
+    the machine shows the price of what the user orders
+    return value : nothing
+
+    insertMoney(inserted)
+    called when the user inserts some money to order 
+    return value : nothing
+
+    displayDoubleCheck()
+    the machine asks if the user want to order or cancel
+    return value : nothing
+
+    pressStartButton()
+    called when the user presses start button to get the order with enough money
+    return value : string, “here’s your coffee”
+
+    pressStartButtonWithout()
+    called when the user presses start button to get the order without enough money
+    return value : string, “You need to insert more money”
+
+    recieveCoffee()
+    the user can get what he/she orders when inserted money is enough otherwise can not get the order
+    return value : string, “here’s your coffee” / “you didn’t insert enough money so can’t get any.”
+
+    giveBackChange()
+    the machine gives the change when the user inserts more than the coffee price
+    return value : nothing
+
+    decidePayCard()
+    the user wants to pay with cash
+    return value : nothing
+
+    swipeCard()
+    called when the user swipes the card to pay
+    return value : nothing

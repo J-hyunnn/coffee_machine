@@ -1,0 +1,19 @@
+*** Coffee machine ***
+
+This is a coffee machine that people can order coffee.
+It is connected to outlet for the electricity.
+It informs when coffee or milk or ice runs out
+so that the owner can refill them.
+It is connected to tap water.
+It has a display that shows the proceedure and helps us.
+That are total 5 buttons for ordering coffee
+and start and cancel button.
+There is a coin slot, card reader and hole for the change.
+There is a rack to place the cup for the coffee at the bottom.
+There are americano, ice-americano, latter, ice-latte or warm milk.
+The coffee price is calculated : basic rate = 10kr, coffee = 5kr, milk = 5kr, and ice = 5kr
+([example] ice latte costs 10+5+5+5+=25kr)
+People can pay for the coffee with coin or card(credit/debit).
+People can cancel the order before the machine starts to brew it.
+When inserted money more the machine will give back the calculated change
+When inserted amount is not enough the order will be canceled and returns the inserted money.
